@@ -61,9 +61,10 @@ $history =  $history->fetchAll(PDO::FETCH_ASSOC);
     </style>
 </head>
 <?php include 'header.php'?>
-<body>
+<body class="<?=$bankClassName[$_SERVER['HTTP_HOST']];?>">
+<div class="content">
 <div class="container">
-    <div class="content">
+
         <div class="header">
             <h3>Lịch sử giao dịch</h3>
             <a href="/" class="back">Trở lại</a>

@@ -48,11 +48,7 @@ $infoData = [
         .mt-20 {
             margin-top: 20px;
         }
-        .content {
-            margin: auto;
-            width: 500px;
 
-        }
         label {
             font-weight: 500;
         }
@@ -135,7 +131,8 @@ $infoData = [
     </script>
 </head>
 <?php include 'header.php'?>
-<body>
+<body class="<?=$bankClassName[$_SERVER['HTTP_HOST']];?>">
+<div class="content">
 <div class="container">
     <form method="post" id="form">
         <div class="header">
@@ -154,6 +151,7 @@ $infoData = [
                 <option value="">Chọn ngân hàng</option>
                 <option value="bank_a">Bank A</option>
                 <option value="bank_b">Bank B</option>
+                <option value="bank_c">Bank C</option>
             </select>
         </div>
         <div class="form-group account-number " style="display: none" >
@@ -183,6 +181,7 @@ $infoData = [
         <button type="submit" class="btn btn-primary" id="send" disabled>Thực hiện</button>
     </form>
 
+</div>
 </div>
 
 </body>

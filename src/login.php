@@ -23,30 +23,43 @@
         .container {
 
         }
+        body {
+
+            background-size: 100% 100%;
+            color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+
     </style>
 </head>
-<body>
-<div class="container">
-    <form method="post" action="/do-login.php">
-        <h3 class="text-center">Đăng nhập</h3>
-        <div class="form-group">
-            <label for="exampleInputEmail1">Tài khoản</label>
-            <input type="text" class="form-control" name="username" required>
-        </div>
-        <div class="form-group">
-            <label for="exampleInputPassword1">Mật khẩu</label>
-            <input type="password" class="form-control" name="password" required>
-        </div>
-        <?php
+<?php include 'header.php'?>
+<body class="<?=$bankClassName[$_SERVER['HTTP_HOST']];?>">
+<div class="content content-login">
+    <div class="container">
+        <form method="post" action="/do-login.php">
+            <h3 class="text-center">Đăng nhập</h3>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Tài khoản</label>
+                <input type="text" class="form-control" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="exampleInputPassword1">Mật khẩu</label>
+                <input type="password" class="form-control" name="password" required>
+            </div>
+            <?php
             if ($_GET['error']) {
                 echo '<div class="alert alert-danger" role="alert">
                       Tài khoản hoặc mật khẩu không đúng.
                     </div>';
             }
-        ?>
-        <button type="submit" class="btn btn-primary">Đăng nhập</button>
-    </form>
+            ?>
+            <button type="submit" class="btn btn-primary">Đăng nhập</button>
+        </form>
+    </div>
 </div>
+
 
 </body>
 </html>

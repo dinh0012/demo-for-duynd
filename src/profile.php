@@ -49,17 +49,14 @@ $infoData = [
         .mt-20 {
             margin-top: 20px;
         }
-        .content {
-            margin: auto;
-            width: 500px;
 
-        }
     </style>
 </head>
-<body>
 <?php include 'header.php'?>
+<body class="<?=$bankClassName[$_SERVER['HTTP_HOST']];?>">
+<div class="content">
 <div class="container">
-    <div class="content">
+
         <h1>Thông tin tài khoản</h1>
         <?php
 
