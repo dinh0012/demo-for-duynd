@@ -36,6 +36,14 @@ $banks = ['bank_a' => 'Ngân Hàng A', 'bank_b' => 'Ngân hàng B'];
         padding: 10px 20px;
     }
     .content {
+        height: 100%;
+        background-size: 100% 100% !important;
+    }
+    .content-login {
+        background: url('https://online.vpbank.com.vn/cb/web/grafx/portalSelection/backgroundVPBank.jpg');
+        display: flex;
+        align-items: center;
+        height: 100%;
 
     }
     .content-login {
@@ -44,6 +52,36 @@ $banks = ['bank_a' => 'Ngân Hàng A', 'bank_b' => 'Ngân hàng B'];
         align-items: center;
         height: 100%;
 
+    }
+    .bankB .content-login {
+        color: #005790;
+        background: url('https://scontent.fhan5-1.fna.fbcdn.net/v/t1.15752-9/106588307_719084672211357_7677471772291774918_n.png?_nc_cat=110&ccb=2&_nc_sid=ae9488&_nc_ohc=pdebNtY44LYAX-E-ddg&_nc_ht=scontent.fhan5-1.fna&oh=ee909dc303f06123a3c9cf0840b3e5b0&oe=5FD469DB');
+    }
+    .bankC .content-login {
+        color: #ae1c3f;
+        background: url('https://scontent.fhan5-6.fna.fbcdn.net/v/t1.15752-9/124186128_1556558581220782_64986026539977004_n.png?_nc_cat=107&ccb=2&_nc_sid=ae9488&_nc_ohc=q2YLk-kvZUQAX-dDsy0&_nc_ht=scontent.fhan5-6.fna&oh=6ecbd672072a98e0b35579bb53891482&oe=5FD21F16');
+    }
+    .bankA .content {
+        color: #ae1c3f;
+        background: url('https://online.vpbank.com.vn/cb/web/grafx/portalSelection/backgroundVPBank.jpg');
+    }
+
+    .bankA table {
+        color: #ae1c3f;
+    }
+    .bankB .content {
+        color: #2fdb16;
+        background: url('https://scontent.fhan5-1.fna.fbcdn.net/v/t1.15752-9/106588307_719084672211357_7677471772291774918_n.png?_nc_cat=110&ccb=2&_nc_sid=ae9488&_nc_ohc=pdebNtY44LYAX-E-ddg&_nc_ht=scontent.fhan5-1.fna&oh=ee909dc303f06123a3c9cf0840b3e5b0&oe=5FD469DB');
+    }
+    .bankB table {
+        color: #2fdb16;
+    }
+    .bankC .content {
+        color: #ae1c3f;
+        background: url('https://scontent.fhan5-6.fna.fbcdn.net/v/t1.15752-9/124186128_1556558581220782_64986026539977004_n.png?_nc_cat=107&ccb=2&_nc_sid=ae9488&_nc_ohc=q2YLk-kvZUQAX-dDsy0&_nc_ht=scontent.fhan5-6.fna&oh=6ecbd672072a98e0b35579bb53891482&oe=5FD21F16');
+    }
+    .bankC table {
+        color: #ae1c3f;
     }
     .bankA h1 {
         color: #e30613;
